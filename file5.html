@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+        <div id="d2">This is Js Session</div>
+    <script>
+       //How to get output in js
+       //1.document.write()
+       document.write("This is output of document.write");
+       //2.window.alert();
+       window.alert("Hello welcome to Javascript");
+       
+        //3. DOM
+        document.getElementById("d1").innerHTML="Hai How are You";
+        var val=document.getElementById("d2").innerHTML;//get html element
+
+            document.getElementById("d1").style.color="red";
+            document.getElementById("d1").style.fontSize="20px";
+        //4.console.lo
+        console.log(val);
+        //Data types
+        var x;
+        a=10;
+        a=2.4;
+        x=890765;//number datatype
+        
+        var name="Good afternoon";//string
+        console.log(name);
+        var cond=true;//boolean
+        console.log(cond);
+        //4.Array
+        //it is collection value with same data type.
+        //In array value store on index basis.
+        //Array index always start from 0 index.
+        //Array denoted by[]
+        //5.Object: It is a collection of value with different data type
+            //in object values store in key and value format
+            //Object denoted by{}
+        var days=["Mon","Tue","Wed","Thurs","Fri","Sat"];
+        console.log(days);
+        console.log(days[3]);
+//Object data type
+        var emp={
+            empId:101,
+            empName:"Rahul",
+            Salary:56000
+        }
+        console.log(emp.empName);
+//undefined datatype     
+        var y;
+        console.log("y datatype:",typeof(y));
+//7.null
+var z=null;
+console.log("z datatyepe:", typeof(z));    
+</script>
+</body>
+</html>
